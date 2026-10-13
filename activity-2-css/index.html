@@ -1,134 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cartly | Everyday essentials, delivered fast</title>
-  <meta name="description" content="Shop beauty, fragrance and everyday essentials at Cartly. Free delivery on orders over $25.">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-
-  <!-- Link previews (LinkedIn, WhatsApp, Slack) -->
-  <meta property="og:title" content="Cartly | Everyday essentials, delivered fast">
-  <meta property="og:description" content="Beauty, fragrance and more. Free delivery on orders over $25.">
-  <meta property="og:image" content="images/hero.svg">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartly - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <a href="#" class="logo"><img src="images/logo.svg" alt="Cartly home" width="160" height="40"></a>
-    <nav aria-label="Main">
-      <ul class="nav-list">
-        <li><a href="#" aria-current="page">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-      </ul>
-    </nav>
-    <form class="search" role="search">
-      <label for="search-input">Search products</label>
-      <input id="search-input" type="search" name="q">
-      <button type="submit" class="btn">Search</button>
-    </form>
-  </header>
+    <!-- Header -->
+    <header class="site-header">
+        <a href="#" class="logo">Cartly</a>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-text">
-        <h1 id="hero-title">Everyday essentials, delivered fast</h1>
-        <p>Beauty, fragrance and more. Free delivery on orders over $25.</p>
-        <a href="#products" class="btn btn-primary">Shop now</a>
-      </div>
-      <img src="images/hero.svg" alt="" width="1200" height="600">
-    </section>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#newsletter">Newsletter</a>
+        </nav>
 
-    <section id="products" aria-labelledby="products-title">
-      <h2 id="products-title">Featured products</h2>
-      <p class="section-sub">Hand-picked this week</p>
-      <ul class="products">
-          <li>
-            <article class="card">
-              <img src="images/mascara.svg" alt="Black mascara tube with a pink base" width="300" height="300" loading="lazy">
-              <p class="card-category">Beauty</p>
-              <h3 class="card-title"><a href="#product-1">Essence Mascara Lash Princess</a></h3>
-              <p class="card-price">$9.99</p>
-              <p class="card-rating">Rated 2.6 out of 5</p>
-              <button type="button" class="btn">Add to cart</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="images/eyeshadow.svg" alt="Six-shade eyeshadow palette in warm tones" width="300" height="300" loading="lazy">
-              <p class="card-category">Beauty</p>
-              <h3 class="card-title"><a href="#product-2">Eyeshadow Palette with Mirror</a></h3>
-              <p class="card-price">$19.99</p>
-              <p class="card-rating">Rated 2.9 out of 5</p>
-              <button type="button" class="btn">Add to cart</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="images/powder.svg" alt="Round canister of setting powder" width="300" height="300" loading="lazy">
-              <p class="card-category">Beauty</p>
-              <h3 class="card-title"><a href="#product-3">Powder Canister</a></h3>
-              <p class="card-price">$14.99</p>
-              <p class="card-rating">Rated 4.6 out of 5</p>
-              <button type="button" class="btn">Add to cart</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="images/lipstick.svg" alt="Red lipstick in a black and silver case" width="300" height="300" loading="lazy">
-              <p class="card-category">Beauty</p>
-              <h3 class="card-title"><a href="#product-4">Red Lipstick</a></h3>
-              <p class="card-price">$12.99</p>
-              <p class="card-rating">Rated 4.4 out of 5</p>
-              <button type="button" class="btn">Add to cart</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="images/nail-polish.svg" alt="Bottle of red nail polish" width="300" height="300" loading="lazy">
-              <p class="card-category">Beauty</p>
-              <h3 class="card-title"><a href="#product-5">Red Nail Polish</a></h3>
-              <p class="card-price">$8.99</p>
-              <p class="card-rating">Rated 4.3 out of 5</p>
-              <button type="button" class="btn">Add to cart</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="images/perfume.svg" alt="Clear blue perfume bottle" width="300" height="300" loading="lazy">
-              <p class="card-category">Fragrances</p>
-              <h3 class="card-title"><a href="#product-6">Calvin Klein CK One</a></h3>
-              <p class="card-price">$49.99</p>
-              <p class="card-rating">Rated 4.4 out of 5</p>
-              <button type="button" class="btn">Add to cart</button>
-            </article>
-          </li>
-      </ul>
-    </section>
+        <form class="search-form" action="#">
+            <label for="search" class="visually-hidden">Search products</label>
+            <input type="search" id="search" placeholder="Search products">
+            <button type="submit">Search</button>
+        </form>
+    </header>
 
-    <section id="newsletter" class="newsletter" aria-labelledby="newsletter-title">
-      <h2 id="newsletter-title">Get deals in your inbox</h2>
-      <p>One email a week. No spam.</p>
-      <form class="newsletter-form">
-        <label for="email">Email address</label>
-        <input id="email" type="email" name="email" autocomplete="email" required>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </section>
-  </main>
+    <!-- Main content -->
+    <main>
 
-  <footer class="site-footer" id="contact">
-    <ul class="footer-links">
-      <li><a href="mailto:hello@cartly.example">Contact us</a></li>
-      <li><a href="#">Privacy policy</a></li>
-    </ul>
-    <p>&copy; <span id="year"></span> Cartly</p>
-  </footer>
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Find Your Everyday Favorites</h1>
+                <p>Discover beauty and fragrance products made for you.</p>
+                <a href="#products" class="button">Shop Now</a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80"
+                alt="Beauty products arranged on a table">
+        </section>
+
+        <!-- Products section -->
+        <section class="products-section" id="products">
+            <h2>Featured Products</h2>
+
+            <div class="product-grid">
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80"
+                         alt="Perfume bottle">
+                    <p>Fragrance</p>
+                    <h3>Classic Perfume</h3>
+                    <p>₹1,299</p>
+                    <p>★★★★★</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"
+                         alt="Skincare bottle">
+                    <p>Skincare</p>
+                    <h3>Daily Face Serum</h3>
+                    <p>₹799</p>
+                    <p>★★★★☆</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80"
+                         alt="Cosmetic products">
+                    <p>Beauty</p>
+                    <h3>Beauty Essentials</h3>
+                    <p>₹999</p>
+                    <p>★★★★★</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80"
+                         alt="Beauty and fragrance products">
+                    <p>Fragrance</p>
+                    <h3>Fresh Day Perfume</h3>
+                    <p>₹1,099</p>
+                    <p>★★★★☆</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80"
+                         alt="Beauty cream">
+                    <p>Skincare</p>
+                    <h3>Moisturizing Cream</h3>
+                    <p>₹599</p>
+                    <p>★★★★☆</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80"
+                         alt="Skincare product collection">
+                    <p>Beauty</p>
+                    <h3>Beauty Care Set</h3>
+                    <p>₹1,499</p>
+                    <p>★★★★★</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Newsletter section -->
+        <section class="newsletter" id="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Get updates about new products and special offers.</p>
+
+            <form action="#">
+                <label for="email" class="visually-hidden">Email address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year">2026</span> Cartly. All rights reserved.</p>
+        <p>
+            <a href="mailto:hello@cartly.example">Contact Us</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
 </body>
 </html>
